@@ -1,0 +1,33 @@
+$verde:#07D962;
+$roxo:#67159C;
+$rosa-choque:#E82D92;
+$preto-fosco:#19181F;
+
+h1{
+  color: white;
+  padding: 0.5rem;
+  animation: animação infinite 3s;
+  border-radius: 1rem;
+  &:hover{
+    filter: drop-shadow(0rem 1rem 1rem black);
+  }
+}
+
+@keyframes animação{
+  0% {
+  background: linear-gradient( to left ,$verde, $roxo);
+  }
+  25%{
+    background: linear-gradient(to top, $verde, $roxo);
+  
+  }
+  50%{
+    background: linear-gradient(to right, $verde, $roxo);
+
+  }
+  100%{
+    background: linear-gradient(to bottom, $verde, $roxo);
+
+  }
+
+}

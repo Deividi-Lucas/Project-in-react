@@ -1,3 +1,19 @@
-div {
+div.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url('../../image/Plano_de_fundo.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  
+  
+  
+  p{
+    color: white;
+  }
 }

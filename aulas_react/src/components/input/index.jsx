@@ -1,3 +1,5 @@
+import './style.scss'
+
 function Input({ placeholder, onkeyup, onchange }) {
   return (
     <>

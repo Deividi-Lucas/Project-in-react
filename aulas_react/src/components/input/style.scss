@@ -1,0 +1,21 @@
+input{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  font-size: 0.9rem;
+  border: 0.05rem solid blue;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  color: white;
+  background: blue;
+
+  &::placeholder{
+    color: white;
+  }
+  
+
+  &:hover
+  {
+    color: yellowgreen;
+    font: 900;
+  }
+}

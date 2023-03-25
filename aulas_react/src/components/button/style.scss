@@ -1,0 +1,17 @@
+button {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 0.8rem;
+  border:  0.12rem solid ;
+  background: white;
+  border-radius: 1rem;
+  color: blue;
+  font-size: 0.9rem;
+  font-weight: 900;
+
+  margin: 1rem;
+  &:hover{
+    background: blue;
+    color: white;
+  }
+
+}

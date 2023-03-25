@@ -2,22 +2,38 @@ import './style.scss'
 import Input from '../../components/input'
 import Title from '../../components/title'
 import { useState } from 'react'
+import Button from '../../components/button'
+import Form from '../../components/form'
 
 function Main() {
   const [dados, setDados] = useState('')
+  const [result, setResult] = useState('')
+
+  function SendDate() {
+    setResult(dados)
+  }
+
+  function PressEnter(e) {
+    if (e.target.value !== '') {
+      if (e.key === 'Enter') {
+        setResult(e.target.value)
+      }
+    }
+  }
 
   return (
-    <div>
-      <Title title={'Site para Aprendeizagem >>'} />
+    <div className="main">
+      <Title title={'Site para Aprendizagem >>'} />
       <Input
         placeholder={'DIGITE AQUI: '}
-        onkeyup={e => {
-          if (e.key == 'Enter') {
-            setDados(e.target.value)
-          }
-        }}
+        onkeyup={PressEnter}
+        onchange={e => setDados(e.target.value)}
       />
-      <span>{dados}</span>
+      <Button title={'send'} onclick={SendDate} />
+
+      <p>{result}</p>
+
+      <Form />
     </div>
   )
 }
