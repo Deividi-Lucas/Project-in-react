@@ -3,30 +3,40 @@ $roxo:#67159C;
 $rosa-choque:#E82D92;
 $preto-fosco:#19181F;
 
-h1{
-  color: white;
-  padding: 0.5rem;
-  animation: animação infinite 3s;
+div.box{
+  background-color: rgb(0, 0, 0,0.4);
   border-radius: 1rem;
-  &:hover{
-    filter: drop-shadow(0rem 1rem 1rem black);
-  }
-}
+  backdrop-filter: blur(1rem);
+  box-shadow: 0,1rem,2rem,rgb(0, 0, 0,0.5);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+
+  h1{
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  animation: animação infinite 3s;
+  // filter: contrast(80%);  
+  text-shadow: 3px 1px 1rem black;
+
+}}
 
 @keyframes animação{
   0% {
-  background: linear-gradient( to left ,$verde, $roxo);
+  background-image: linear-gradient( to left ,$verde, $roxo);
   }
   25%{
-    background: linear-gradient(to top, $verde, $roxo);
+    background-image: linear-gradient(to top, $verde, $roxo);
   
   }
   50%{
-    background: linear-gradient(to right, $verde, $roxo);
+    background-image: linear-gradient(to right, $verde, $roxo);
 
   }
   100%{
-    background: linear-gradient(to bottom, $verde, $roxo);
+    background-image: linear-gradient(to bottom, $verde, $roxo);
 
   }
 

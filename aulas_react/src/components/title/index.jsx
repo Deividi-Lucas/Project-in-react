@@ -1,7 +1,11 @@
 import './style.scss'
 
 function Title({ title }) {
-  return <h1>{title}</h1>
+  return (
+    <div className="box">
+      <h1>{title}</h1>
+    </div>
+  )
 }
 
 export default Title
