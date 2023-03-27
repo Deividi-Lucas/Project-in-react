@@ -23,7 +23,7 @@ function Main() {
 
   return (
     <div className="main">
-      <Title title={'Site para Aprendizagem >>'} />
+      <Title title={'Site para Aprendizagem >> Components'} />
       <Input
         placeholder={'DIGITE AQUI: '}
         onkeyup={PressEnter}
@@ -33,7 +33,7 @@ function Main() {
 
       <p>{result}</p>
 
-      <Form />
+      <Form Input={onchange} />
     </div>
   )
 }

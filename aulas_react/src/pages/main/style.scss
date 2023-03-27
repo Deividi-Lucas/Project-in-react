@@ -1,4 +1,5 @@
 div.main {
+  color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,13 +8,18 @@ div.main {
   width: 100vw;
 
   background-image: url('../../image/Plano_de_fundo.jpg');
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  
-  
+ 
+  overflow-y: scroll;
+
+
   
   p{
-    color: white;
+    background: rgb(0, 0, 0,0.6);
+    border-radius: 1rem;
+    width: 50%;
+    word-break: break-all;
   }
 }
