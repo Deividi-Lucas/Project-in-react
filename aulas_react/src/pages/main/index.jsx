@@ -4,10 +4,13 @@ import Title from '../../components/title'
 import { useState } from 'react'
 import Button from '../../components/button'
 import Form from '../../components/form'
+import MyList from '../../components/List-array'
 
 function Main() {
   const [dados, setDados] = useState('')
   const [result, setResult] = useState('')
+
+  const lista = ['react', 'angular', 'vue', 'teste']
 
   function SendDate() {
     setResult(dados)
@@ -31,9 +34,11 @@ function Main() {
       />
       <Button title={'send'} onclick={SendDate} />
 
-      <p>{result}</p>
+      <p className="result_input">{result}</p>
 
       <Form Input={onchange} />
+
+      <MyList items={lista} />
     </div>
   )
 }
