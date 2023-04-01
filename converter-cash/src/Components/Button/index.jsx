@@ -1,9 +1,9 @@
 import './styles.css'
 
-export default function Button({ title }) {
+export default function Button({ title, onclick }) {
   return (
     <div>
-      <button>{title}</button>
+      <button onClick={onclick}>{title}</button>
     </div>
   )
 }
