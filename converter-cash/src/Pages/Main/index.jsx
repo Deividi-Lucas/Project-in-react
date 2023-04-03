@@ -3,6 +3,7 @@ import Title from '../../Components/Title'
 import Input from '../../Components/Input'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import { toBRL } from '../../utils/toBRL'
 
 export default function Main() {
   const [dolar, setDolar] = useState(0)
@@ -29,13 +30,7 @@ export default function Main() {
         }}
         type={'number'}
       />
-      <span>
-        {(dolar * valor).toLocaleString('pt-br', {
-          style: 'currency',
-          currency: 'BRL'
-        })}
-      </span>
-      <div className="Test_api"></div>
+      <span>{toBRL(dolar * valor)}</span>
     </div>
   )
 }
