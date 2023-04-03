@@ -11,8 +11,8 @@ export default function Main() {
 
   useEffect(() => {
     axios
-      .get('https://economia.awesomeapi.com.br/last/USD-BRL')
-      .then(res => setValor(res.data?.USDBRL.high))
+      .get('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL')
+      .then(res => setValor(res.data?.USDBRL.ask))
       .catch(error => {
         console.error('ops ! ocorreu um erro')
       })
